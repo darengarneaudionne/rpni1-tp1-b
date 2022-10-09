@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+/**
+ * @author COLLECTIF - @TIMCSF
+ *
+ * TABLE DES MATIERES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Menu
+ * Grille
+ * Mise en page
+ *** Contenus principal et complémentaire
+ *** Architecture des CSS (liste de définitions)
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import "normalize.scss";
+
+/* Utilitaires
+   ========================================================================== */
+@import "_utilitaires.scss";
+
+/* Charte typographique
+   ========================================================================== */
+@import "_typo.scss";
+
+/* Menu
+   ========================================================================== */
+@import "_menu.scss";
+
+/* Grille
+   ========================================================================== */
+@import "_grille.scss";
+
+/* Mise en page
+   ========================================================================== */
+body, header, main, footer {
+    background-color: black;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+.btn__main {
+    padding: 15px 25px 15px 25px;
+    border-radius: 22px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    transition: opacity .2s ease-in-out,background .4s ease-in-out,color .4s ease-in-out;
+    font-family: Source Sans Pro;
+    letter-spacing: .8px;
+    line-height: 1.71;
+    align-items: center;
+
+    &:hover {
+        background-color: rgb(221, 221, 221);
+    }
+}
