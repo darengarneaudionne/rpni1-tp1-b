@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
- * @author COLLECTIF - @TIMCSF
+ * @author Daren Garneau-Dionne [2065779@csfoy.ca]
  *
  * TABLE DES MATIERES
  * Normalize
@@ -544,10 +544,26 @@ h4,
   }
 }
 
+.footer > * { /* = 17px */
+  font-size: 1.7rem;
+}
+@media (min-width: 600px) {
+  .footer > * {
+    /* = 18px */
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 800px) {
+  .footer > * {
+    /* = 22px */
+    font-size: 2.2rem;
+  }
+}
+
 /* Menu
    ========================================================================== */
 /**
- * @author Prénom Nom courriel
+ * @author Daren Garneau-Dionne
 **/
 /**
  * TABLE DES MATIÈRES
@@ -608,10 +624,15 @@ h4,
   }
 }
 /* Liens du menu */
-.nav__link {
-  background-color: rgba(145, 0, 145, 0.2);
+.footer-liste {
+  display: flex;
+  width: 50%;
+}
+
+.footer-liste__lien {
+  text-decoration: none;
   display: block;
-  padding: 5px 10px;
+  padding: 10px 10px;
   width: 100%;
 }
 
@@ -763,6 +784,41 @@ main {
 }
 .btn__main:hover {
   background-color: rgb(221, 221, 221);
+}
+
+.footer__liste, .footer-media {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-conteneur {
+  width: 90%;
+  margin: auto;
+}
+
+.footer-liste-conteneur {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-liste__item a {
+  color: white;
+}
+
+.infolettre__btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+}
+
+.footer-media {
+  display: flex;
+  padding: 30px 10px;
+}
+
+.footer-media__lien {
+  padding: 0 25px 0 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

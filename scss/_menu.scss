@@ -1,5 +1,5 @@
 /**
- * @author Prénom Nom courriel
+ * @author Daren Garneau-Dionne
 **/
 
 /**
@@ -62,10 +62,14 @@
 }
 
 /* Liens du menu */
-.nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
+.footer-liste {
+    display: flex;
+    width: 50%;
+}
+.footer-liste__lien {
+    text-decoration: none;
     display: block;
-    padding: 5px 10px;
+    padding: 10px 10px;
     width: 100%;
 }
 

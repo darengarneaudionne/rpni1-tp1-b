@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /**
- * @author COLLECTIF - @TIMCSF
+ * @author Daren Garneau-Dionne [2065779@csfoy.ca]
  *
  * TABLE DES MATIERES
  * Normalize
@@ -61,4 +61,39 @@ main {
     &:hover {
         background-color: rgb(221, 221, 221);
     }
+}
+
+.footer__liste, .footer-media {
+   margin: 0;
+   padding: 0;
+}
+
+.footer-conteneur {
+   width: 90%;
+   margin: auto;
+}
+
+.footer-liste-conteneur {
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-liste__item a {
+   color: white;
+}
+
+.infolettre__btn {
+   background-color: black;
+   border: none;
+   color: white;
+   padding: 10px 10px;
+}
+
+.footer-media {
+   display: flex;
+   padding: 30px 10px;
+}
+
+.footer-media__lien  {
+   padding: 0 25px 0 0;
 }
