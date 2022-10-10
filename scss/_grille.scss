@@ -12,3 +12,15 @@
   grid-template-columns: 5fr 1fr 1fr 1fr 2fr;
   padding: 10px;
 }
+
+.actualite__image { grid-area: image; }
+.actualite-paragraphe-titre { grid-area: paragraphe; }
+
+.actualite {
+    display: grid;
+    grid-template-areas:
+    'image image image image image image'
+    'paragraphe paragraphe paragraphe paragraphe paragraphe paragraphe';
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+}
