@@ -44,10 +44,12 @@ body, header, main, footer {
 main {
     width: 90%;
     margin: auto;
+    color: white;
 }
 
 .btn__main {
     padding: 15px 25px 15px 25px;
+    text-align: center;
     border-radius: 22px;
     background-color: white;
     color: black;
@@ -88,7 +90,7 @@ main {
    color: white;
    padding: 10px 10px;
 }
-
+  
 .footer-media {
    display: flex;
    padding: 30px 10px;
