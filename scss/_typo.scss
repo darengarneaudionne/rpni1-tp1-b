@@ -127,6 +127,19 @@ h4,
     }
 }
 
+.grand-texte { /* = 28px*/
+    font-size: 2.8rem;
+
+    @media (min-width: 600px) {
+        /* = 18px */
+        font-size: 1.8rem;
+    }
+    @media (min-width: 800px) {
+        /* = 22px */
+        font-size: 2.2rem;
+    }
+}
+
 .footer > * { /* = 17px */
     font-size: 1.7rem;
 

@@ -1,15 +1,14 @@
 
 .section-typeA__image { grid-area: image; }
-.section-typeA__p { grid-area: paragraphe; }
-.btn__main { grid-area: bouton; }
+.parapgraphe-bouton-conteneur { grid-area: paragraphe; }
 
 .section-typeA {
   display: grid;
   grid-template-areas:
     'image image image image image image'
     'paragraphe paragraphe paragraphe paragraphe paragraphe paragraphe'
-    'bouton . . . . .';
+    'paragraphe paragraphe paragraphe paragraphe paragraphe paragraphe';
   gap: 10px;
-  grid-template-columns: 1fr 3fr 2fr 2fr 2fr;
+  grid-template-columns: 5fr 1fr 1fr 1fr 2fr;
   padding: 10px;
 }

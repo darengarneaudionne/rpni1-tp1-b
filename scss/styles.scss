@@ -47,22 +47,45 @@ main {
     color: white;
 }
 
+.section-typeA__p, .btn__main-conteur {
+   display: flex;
+   width: 90%;
+}
+
+.parapgraphe-bouton-conteneur {
+   margin: auto;
+   width: 90%;
+   display: flex;
+   flex-direction: column;
+}
+
 .btn__main {
-    padding: 15px 25px 15px 25px;
-    text-align: center;
-    border-radius: 22px;
-    background-color: white;
-    color: black;
-    text-decoration: none;
-    transition: opacity .2s ease-in-out,background .4s ease-in-out,color .4s ease-in-out;
-    font-family: Source Sans Pro;
-    letter-spacing: .8px;
-    line-height: 1.71;
-    align-items: center;
+   width: max-content;
+   padding: 10px 20px 10px 20px;
+   text-align: center;
+   border-radius: 22px;
+   background-color: white;
+   color: black;
+   text-decoration: none;
+   transition: opacity .2s ease-in-out,background .4s ease-in-out,color .4s ease-in-out;
+   font-family: Source Sans Pro;
+   letter-spacing: .8px;
+   line-height: 1.71;
+   align-items: center;
 
     &:hover {
         background-color: rgb(221, 221, 221);
     }
+}
+
+.grand-texte {
+   text-align: center;
+}
+
+.section-centre {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 .footer__liste, .footer-media {
