@@ -443,6 +443,7 @@ h4,
 
 body {
   font-family: "Source Sans Pro", sans-serif;
+  color: white;
 }
 
 /* Base décimale */
@@ -750,13 +751,22 @@ body, header, main, footer {
   background-color: black;
 }
 
-main {
+.nav__liste {
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
   color: white;
 }
 
 .section-lien-conteneur {
   margin: auto;
   width: 90%;
+}
+
+.section-typeA {
+  margin: 100px 0 100px 0;
 }
 
 .section-typeA__p, .btn__main-conteur {
@@ -803,6 +813,7 @@ main {
 .actualite {
   color: white;
   text-decoration: none;
+  margin: 100px 0 100px 0;
 }
 
 .actualite-paragraphe-titre {
@@ -820,6 +831,7 @@ main {
 .footer__liste, .footer-media {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .footer-conteneur {
@@ -850,7 +862,7 @@ main {
   content: "[";
   left: -1px;
   transition: opacity 0.3s ease-in-out;
-  /*La transition ne fonctionne pas. Cela fonctionnerait peut-etre avec l'utilisation d'un span*/
+  /*La transition ne fonctionne pas. Cela fonctionnerait peut-être avec l'utilisation d'un span*/
 }
 
 .footer-liste__item a:hover::after {
@@ -860,7 +872,7 @@ main {
   content: "]";
   right: 2px;
   transition: opacity 0.3s ease-in-out;
-  /*La transition ne fonctionne pas. Cela fonctionnerait peut-etre avec l'utilisation d'un span*/
+  /*La transition ne fonctionne pas. Cela fonctionnerait peut-être avec l'utilisation d'un span*/
 }
 
 .infolettre__btn {
