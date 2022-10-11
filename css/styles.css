@@ -833,7 +833,34 @@ main {
 }
 
 .footer-liste__item a {
+  position: relative;
+  width: max-content;
   color: white;
+}
+
+.footer-liste__item a:before, .footer-liste__item a:after {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.footer-liste__item a:hover::before {
+  width: auto;
+  position: absolute;
+  opacity: 1;
+  content: "[";
+  left: -1px;
+  transition: opacity 0.3s ease-in-out;
+  /*La transition ne fonctionne pas. Cela fonctionnerait peut-etre avec l'utilisation d'un span*/
+}
+
+.footer-liste__item a:hover::after {
+  width: auto;
+  position: absolute;
+  opacity: 1;
+  content: "]";
+  right: 2px;
+  transition: opacity 0.3s ease-in-out;
+  /*La transition ne fonctionne pas. Cela fonctionnerait peut-etre avec l'utilisation d'un span*/
 }
 
 .infolettre__btn {
