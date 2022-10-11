@@ -751,6 +751,12 @@ body, header, main, footer {
   background-color: black;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .nav__liste {
   list-style: none;
 }
@@ -772,6 +778,11 @@ body, header, main, footer {
 .section-typeA__p, .btn__main-conteur {
   display: flex;
   width: 90%;
+}
+
+.section-typeA__image, .actualite img {
+  max-width: 90%;
+  height: min-content;
 }
 
 .parapgraphe-bouton-conteneur {
@@ -889,6 +900,14 @@ body, header, main, footer {
 
 .footer-media__lien {
   padding: 0 25px 0 0;
+}
+
+@media (min-width: 640px) {
+  .actualite-conteneur {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
