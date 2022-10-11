@@ -15,7 +15,7 @@
  * Doc des points de rupture :
  * ==========================================================================
  * Écran étroit : de 0 à 599px
- * point de rupture: 600px
+ * point de rupture: 640px
  *
  * Écran moyen : de 600 à 799px
  * point de rupture: 800px
@@ -61,7 +61,7 @@ body {
     /* facteur multiplicateur de la taille de la police 1.375x16 = 22 */
     line-height: 1.375;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
             line-height: 1.5;
     }
     @media (min-width: 800px) {
@@ -75,7 +75,7 @@ h1,
 .h1 { /* = 32px */
     font-size: 3.2rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 40px */
         font-size: 4rem;
     }
@@ -90,7 +90,7 @@ h2,
 .h2 { /* = 24px */
     font-size: 2.4rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 32px */
         font-size: 3.2rem;
     }
@@ -104,7 +104,7 @@ h3,
 .h3 { /* = 18px */
     font-size: 1.8rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 24px */
         font-size: 2.4rem;
     }
@@ -118,7 +118,7 @@ h4,
 .h4 { /* = 16px */
     font-size: 1.6rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 18px */
         font-size: 1.8rem;
     }
@@ -131,20 +131,20 @@ h4,
 .grand-texte { /* = 28px*/
     font-size: 2.8rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 18px */
-        font-size: 1.8rem;
+        font-size: 4rem;
     }
     @media (min-width: 800px) {
         /* = 22px */
-        font-size: 2.2rem;
+        font-size: 5rem;
     }
 }
 
 .footer > * { /* = 17px */
     font-size: 1.7rem;
 
-    @media (min-width: 600px) {
+    @media (min-width: 640px) {
         /* = 18px */
         font-size: 1.8rem;
     }
