@@ -11,6 +11,15 @@
   gap: 10px;
   grid-template-columns: 5fr 1fr 1fr 1fr 2fr;
   padding: 10px;
+
+  @media (min-width: 640px) {
+    grid-template-areas:
+    'image image image paragraphe paragraphe paragraphe'
+    'image image image paragraphe paragraphe paragraphe'
+    'image image image paragraphe paragraphe paragraphe';
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .actualite__image { grid-area: image; }
@@ -24,3 +33,14 @@
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 5px;
 }
+
+@media (min-width: 640px) {
+  .inverse {
+    grid-template-areas:
+    'paragraphe paragraphe paragraphe image image image'
+    'paragraphe paragraphe paragraphe image image image'
+    'paragraphe paragraphe paragraphe image image image';
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+  }
+}
+

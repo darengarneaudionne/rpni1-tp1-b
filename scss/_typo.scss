@@ -141,6 +141,32 @@ h4,
     }
 }
 
+.parapgraphe-bouton-conteneur { /* = 18px */
+    font-size: 1.8rem;
+
+    @media (min-width: 640px) {
+        /* = 18px */
+        font-size: 1.8rem;
+    }
+    @media (min-width: 800px) {
+        /* = 22px */
+        font-size: 2.2rem;
+    }
+}
+
+.btn__main {
+    font-size: 1.6rem;
+
+    @media (min-width: 640px) {
+        /* = 18px */
+        font-size: 1.6rem;
+    }
+    @media (min-width: 800px) {
+        /* = 22px */
+        font-size: 1.6rem;
+    }
+}
+
 .footer > * { /* = 17px */
     font-size: 1.7rem;
 
