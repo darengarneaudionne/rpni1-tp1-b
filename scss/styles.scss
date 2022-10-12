@@ -210,30 +210,31 @@ main {
 }
 
 .footer-liste__item a:before, .footer-liste__item a:after {
-   opacity: 0;
-   transition: opacity .3s ease-in-out;
+   animation: fondu .3s ease-in-out;
+   color: rgba(255, 255, 255, 0.412);
 }
+
+@keyframes fondu {
+   0% { opacity: 0; }
+   100% { opacity: 1; }
+ }
 
 .footer-liste__item a:hover::before
 {
    width:auto;
    position:absolute;
-   opacity: 1;
    content: '[';
    left: calc(-1px);
    transition: opacity .3s ease-in-out;
-   /*La transition ne fonctionne pas. Cela fonctionnerait peut-être avec l'utilisation d'un span*/
 }
 
 .footer-liste__item a:hover::after 
 {
    width:auto;
    position:absolute;
-   opacity: 1;
    content: ']';
    right: calc(2px);
    transition: opacity .3s ease-in-out;
-   /*La transition ne fonctionne pas. Cela fonctionnerait peut-être avec l'utilisation d'un span*/
 }
 
 .infolettre__btn {
@@ -247,10 +248,17 @@ main {
       width: max-content;
       display: inline-flex;
       align-items: center; 
-      border: 1px solid hsla(0,0%,100%,.25);
-      border-radius: 30px;
       padding: 15px 30px 15px 30px;
       margin-right: 18px;
+      border: 1px solid hsla(0,0%,100%,.55);
+      border-radius: 30px;
+      opacity: .9;
+      background: none;
+      transition: border .3s ease-in-out;
+
+      &:hover {
+         border: 1px solid hsla(0,0%,100%,.25);
+      }
    }
 }
   
@@ -260,8 +268,10 @@ main {
 }
 
 .infolettre-et-media {
+
    @media (min-width:640px) {
       display: flex;
+      background: none;
       align-items: center;
       justify-content: flex-end;
    }
