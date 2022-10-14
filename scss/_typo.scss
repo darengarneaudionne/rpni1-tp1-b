@@ -141,7 +141,7 @@ h4,
     }
 }
 
-.parapgraphe-bouton-conteneur { /* = 18px */
+.parapgraphe-bouton-conteneur, .nav__liste a { /* = 18px */
     font-size: 1.8rem;
 
     @media (min-width: 640px) {
@@ -150,20 +150,20 @@ h4,
     }
     @media (min-width: 800px) {
         /* = 22px */
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
 }
 
 .btn__main {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
 
     @media (min-width: 640px) {
         /* = 18px */
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     @media (min-width: 800px) {
         /* = 22px */
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
 }
 

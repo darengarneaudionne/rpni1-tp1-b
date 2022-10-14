@@ -47,13 +47,56 @@ main {
    align-items: center;
 }
 
+.logo__lien {
+   margin: auto;
+}
+
+.logo__img {
+   width: 130px;
+   height: auto;
+}
+
+.entete {
+   display: flex;
+   justify-content: center;
+   background-color: rgb(0, 0, 0);
+
+   @media(min-width: 640px){
+      height: 120px;
+   }
+}
+
+@media(min-width: 640px){
+   .nav {
+      width: 92%;
+      display: flex;
+   }
+}
+
 .nav__liste {
    list-style: none;
+
+   @media(min-width: 640px){
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
 }
 
 .nav a {
    text-decoration: none;
    color: white;
+}
+
+.nav-liste__item {
+   @media(min-width: 640px){
+      margin-left: 60px;
+
+      &:last-of-type {
+         margin-right: 60px;
+      }
+   }
 }
 
 .section-lien-conteneur {
@@ -217,10 +260,15 @@ main {
 }
 
 
-.footer-liste__lien {
+.crochet {
    position: relative;
    width: max-content;
    color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0 15px 0 15px;
+   text-decoration: none;
 
    &::before, &::after {
       animation: fondu .3s ease-in-out;
@@ -264,16 +312,16 @@ main {
 }
 
 .infolettre__btn {
+   display: inline-flex;
    background-color: black;
    border: none;
    color: white;
    padding: 10px 10px;
    cursor: pointer;
+   align-items: center; 
 
    @media (min-width:640px) {
       width: max-content;
-      display: inline-flex;
-      align-items: center; 
       padding: 15px 30px 15px 30px;
       margin-right: 18px;
       border: 1px solid hsla(0,0%,100%,.55);
@@ -301,13 +349,6 @@ main {
       align-items: center;
       justify-content: flex-end;
    }
-}
-
-.footer-media__lien  {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 0 25px 0 0;
 }
 
 @media (min-width:640px) {
